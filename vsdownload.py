@@ -89,7 +89,7 @@ def setPackageSelectionMSVC15(args, packages, userversion, sdk, toolversion, def
 def setPackageSelection(args, packages):
     # If no packages are selected, install these versionless packages, which
     # gives the latest/recommended version for the current manifest.
-    defaultPackages = ["Microsoft.VisualStudio.Workload.VCTools", "Microsoft.VisualStudio.Component.VC.Tools.ARM", "Microsoft.VisualStudio.Component.VC.Tools.ARM64"]
+    defaultPackages = ["Microsoft.VisualStudio.Workload.VCTools", "Microsoft.VisualStudio.Component.VC.Tools.ARM", "Microsoft.VisualStudio.Component.VC.Tools.ARM64", "Microsoft.VisualStudio.Component.VC.ATL"]
 
     if getattr(args, "msvc_16.0"):
         setPackageSelectionMSVC16(args, packages, "16.0", "10.0.17763", "14.20", defaultPackages)
